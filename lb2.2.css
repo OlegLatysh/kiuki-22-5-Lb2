@@ -1,5 +1,5 @@
- /* Завдання 0: Вкладки */
- .tabs {
+/* Завдання 0: Вкладки */
+.tabs {
     display: flex;
     cursor: pointer;
     margin-bottom: 10px;
@@ -79,7 +79,7 @@
 .custom-flex-container {
     display: flex;
     flex-wrap: wrap;
-    width: 280px;
+    width: 280px; /* ширина контейнера */
     margin: 0 auto;
     gap: 10px;
     justify-content: center;
@@ -91,9 +91,9 @@
     background-color: navy;
 }
 
-.large-vertical-flex-item {
-    width: 80px; /* Ширина равна квадрату */
-    height: 170px; /* Высота двойная */
+.tall-rectangle {
+    width: 30px; /* Узкий прямоугольник */
+    height: 170px; /* Двойная высота */
     background-color: navy;
 }
 
@@ -179,3 +179,4 @@ input:invalid {
     display: block;
     margin: 0 auto;
 }
+
