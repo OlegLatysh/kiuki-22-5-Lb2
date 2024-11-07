@@ -1,4 +1,4 @@
- /* Завдання 1: Вкладки */
+ /* Завдання 0: Вкладки */
  .tabs {
     display: flex;
     cursor: pointer;
@@ -21,7 +21,7 @@
     background-color: #ddd;
 }
 
-/* Завдання 2: Чекбокси зі зміною кольору */
+/* Завдання 1: Чекбокси зі зміною кольору */
 .checkbox-container {
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +53,7 @@
     justify-content: center;
 }
 
-/* Завдання 3: Контейнери Flexbox */
+/* Завдання 2: Контейнери Flexbox */
 .flex-container {
     display: flex;
     justify-content: space-around;
@@ -75,6 +75,27 @@
 .box2 { background-color: red; }
 .box3 { background-color: green; }
 .box4 { background-color: gray; }
+/* Завдання 3: Сітка Flexbox для макету на зображенні */
+.custom-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    margin: 0 auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.flex-item {
+    width: 80px;
+    height: 80px;
+    background-color: navy;
+}
+
+.large-vertical-flex-item {
+    width: 80px; /* Ширина равна квадрату */
+    height: 170px; /* Высота двойная */
+    background-color: navy;
+}
 
 /* Завдання 4: Форма з валідацією */
 #registerForm {
