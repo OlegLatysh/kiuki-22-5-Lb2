@@ -5,124 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LB2</title>
     <link rel="stylesheet" href="lb2.2.css">
+    <style>
+        
+        .header-text {
+            font-size: 24px;
+            color: darkgreen;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1 class="header-text">Приклад використання CSS стилів</h1>
+    </header>
 
-    <!-- Завдання 0: Вкладки -->
-    <div class="tabs">
-        <button class="tablinks active-tab" onclick="openTab(event, 'tab1')">Вкладка 1</button>
-        <button class="tablinks" onclick="openTab(event, 'tab2')">Вкладка 2</button>
-        <button class="tablinks" onclick="openTab(event, 'tab3')">Вкладка 3</button>
+    <!-- Використання inline-стилю для елемента -->
+    <p style="color: blue; font-weight: bold;">
+        Цей текст використовує inline-стиль.
+    </p>
+
+    <div class="custom-flex-container">
+        <div class="flex-item"></div>
+        <div class="flex-item tall-rectangle"></div>
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
     </div>
 
-    <div id="tab1" class="tabcontent" style="display: block;">Галасливі ґави й галки в гусенят взяли скакалки. Гусенята їм ґелґочуть, що й вони скакати хочуть</div>
-    <div id="tab2" class="tabcontent">Їхали крамарі, стали на горі та й забалакалися – про Прокопа, про Прокопиху і про маленьких Прокопенят.</div>
-    <div id="tab3" class="tabcontent">На дворі трава, на траві дрова: раз дрова, два дрова, три дрова. Дрова вшир двору, дрова вздовж двору. Як не вмістить двір дров, треба видворити дрова на дров’яний двір назад.</div>
+    <section>
+        <h2>Навігація</h2>
+        <!-- Використання float -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
 
-    <!-- Завдання 1: Чекбокси зі зміною кольору -->
-    <div class="checkbox-container">
-        <input type="checkbox" id="checkbox1" class="checkbox" hidden>
-        <label for="checkbox1" class="checkbox-wrapper">1</label>
+        <article class="content">
+            <p>Цей текст обтікає навігаційне меню.</p>
+            <p>Ви можете бачити, як текст обтікає меню зліва завдяки використанню float.</p>
+        </article>
+    </section>
 
-        <input type="checkbox" id="checkbox2" class="checkbox" hidden>
-        <label for="checkbox2" class="checkbox-wrapper">2</label>
-
-        <input type="checkbox" id="checkbox3" class="checkbox" hidden>
-        <label for="checkbox3" class="checkbox-wrapper">3</label>
-
-        <input type="checkbox" id="checkbox4" class="checkbox" hidden>
-        <label for="checkbox4" class="checkbox-wrapper">4</label>
-
-        <input type="checkbox" id="checkbox5" class="checkbox" hidden>
-        <label for="checkbox5" class="checkbox-wrapper">5</label>
-
-        <input type="checkbox" id="checkbox6" class="checkbox" hidden>
-        <label for="checkbox6" class="checkbox-wrapper">6</label>
-
-        <input type="checkbox" id="checkbox7" class="checkbox" hidden>
-        <label for="checkbox7" class="checkbox-wrapper">7</label>
-
-        <input type="checkbox" id="checkbox8" class="checkbox" hidden>
-        <label for="checkbox8" class="checkbox-wrapper">8</label>
-
-        <input type="checkbox" id="checkbox9" class="checkbox" hidden>
-        <label for="checkbox9" class="checkbox-wrapper wide-box">9</label>
-    </div>
-
-    <!-- Завдання 2: Контейнери Flexbox (в порядке 3, 4, 1, 2) -->
-    <div class="flex-container">
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-    </div>
-   
-   <!-- Завдання 3: Контейнери Flexbox (Сітка 3x3) -->
-   <div class="custom-flex-container">
-    <div class="flex-item"></div>
-    <div class="flex-item tall-rectangle"></div>
-    <div class="flex-item"></div>
-    <div class="flex-item"></div>
-    <div class="flex-item"></div>
-    <div class="flex-item"></div>
-</div>
-
-    <!-- Завдання 4: Форма з валідацією -->
-    <form id="registerForm">
-        <label for="username">Ім'я користувача:</label>
-        <input type="text" id="username" required>
-        
-        <label for="email">Електронна пошта:</label>
-        <input type="email" id="email" required>
-        
-        <button type="submit">Відправити</button>
-    </form>
-  
-
-    <!-- Завдання 5: Розкривний блок (Спойлер) -->
-    <button class="accordion">Розділ 1</button>
-    <div class="panel">
-        <p>Контент розділу 1</p>
-    </div>
-
-    <!-- Завдання 6: Адаптивне зображення -->
-    <img src="33.jpg" alt="Адаптивне зображення" class="responsive-image">
-
-    <!-- Завдання 7: Вертикальне меню навігації -->
-    <ul class="vertical-menu">
-        <li><a href="#home">Головна</a></li>
-        <li><a href="#news">Новини</a></li>
-        <li><a href="#contact">Контакти</a></li>
-        <li><a href="#about">Про нас</a></li>
-    </ul>
-
-    <!-- Завдання 8: Стрибаюча кнопка -->
-    <button class="bounce-button">Натисни мене!</button>
-
-    <script>
-        // JavaScript для вкладок
-        function openTab(evt, tabName) {
-            let tabcontent = document.getElementsByClassName("tabcontent");
-            for (let i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            let tablinks = document.getElementsByClassName("tablinks");
-            for (let i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active-tab";
-        }
-
-        // JavaScript для аккордеона
-        document.querySelectorAll(".accordion").forEach(button => {
-            button.addEventListener("click", () => {
-                const panel = button.nextElementSibling;
-                panel.style.display = (panel.style.display === "block") ? "none" : "block";
-            });
-        });
-    </script>
-
+    <!-- Приклад використання position -->
+    <div id="fixed-box">Фіксований блок</div>
 </body>
 </html>
+
 
