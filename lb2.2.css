@@ -158,35 +158,3 @@ input:invalid {
     display: block;
     margin: 0 auto;
 }
-
-.hidden-block {
-    position: fixed; /* Блок фиксирован в одном месте при прокрутке */
-    bottom: 0;       /* Расположен внизу страницы */
-    left: 0;         /* Расположен слева */
-    width: 40px;     /* Ширина блока в свернутом виде */
-    height: 100px;   /* Высота блока */
-    background-color: #ffcc00; /* Цвет фона */
-    overflow: hidden; /* Скрывает содержимое, кроме видимой части */
-    transition: width 0.3s ease; /* Плавное расширение при наведении */
-    z-index: 1000; /* Поверх других элементов */
-    cursor: pointer;
-}
-
-.hidden-block:hover {
-    width: 200px; /* Ширина блока при наведении */
-}
-
-.hidden-block a {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.block-image {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
