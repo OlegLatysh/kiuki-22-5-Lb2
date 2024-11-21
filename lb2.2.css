@@ -42,11 +42,22 @@ body {
 
 .sidebar ul li {
     margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px; 
 }
+
 
 .sidebar ul li a {
     text-decoration: none;
     color: navy;
+}
+
+sidebar ul li::before {
+    content: "✔"; 
+    position: absolute;
+    left: 0;
+    color: darkgreen; 
+    font-size: 18px; 
 }
 
 /* Селектор класу для текстового контенту */
@@ -68,7 +79,6 @@ body {
     text-align: center;
     padding-top: 15px;
 }
-
 
 
 
